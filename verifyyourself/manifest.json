@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "X.com Verifyer",
+  "version": "1.0",
+  "description": "Made By Germanized Verifyies yourself",
+  "permissions": [
+    "activeTab",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*", "*://*.x.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
